@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="big-light">
+    <div class="container mt-5 text-center">
+
+        <h2 class="mt-4">house price Prediction Result</h2>
+        {% if prediction == 1 %} 
+            <div class="alert alert-danger" role="alert">
+                <strong>warning:</strong> the model predict is a high price house
+            </div>
+        {% else %}
+            <div class="alert alert-success" role="alert">
+                <strong>good news:</strong> the model predict is a low price house
+            </div>
+
+        {% endif %}
+        
+        <a href="/" class="btn btn-primary mt-3">Go Back to home</a>
+
+    </div>
+    
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body class="bg-light">
+
+<div class="container mt-5 text-center">
+    <h2 class="mb-4">🏠 House Price Prediction Result</h2>
+
+    <div class="alert alert-info p-4 fs-4 shadow rounded">
+        💰 Predicted House Price:  
+        <strong>₹ {{ prediction }}</strong>
+    </div>
+
+    <a href="/" class="btn btn-primary btn-lg mt-4">⬅️ Go Back to Home</a>
+</div>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🏡 House Price Prediction Result</h1>
+        <div class="result-box">
+            <p>💰 Predicted House Price: ₹ {{ prediction }}</p>
+        </div>
+        <a href="/" class="btn">⬅ Go Back to Home</a>
+    </div>
+</body>
+</html> -->
+
+
+
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>🏡 House Price Prediction Result</h1>
+        <div class="result-box">
+            <p>💰 Predicted House Price: ₹ {{ prediction }}</p>
+        </div><br>
+        <p align="center">
+        <a href="/" class="btn"><b align:cent>⬅ Go Back to Home</b></a>
+        </p>
+    </div>
+</body>
+</html>
